@@ -13,18 +13,19 @@
  */
 class AcessoDriverTest extends PHPUnit_Extensions_Selenium2TestCase
 {
-    protected function setUp()
-    {
-        $this->setBrowser('firefox');
-        $this->setBrowserUrl('http://local.teste/view/html/form.html');
-    }
+  protected function setUp()
+  {
+    $this->setBrowser("firefox");
+    $this->setBrowserUrl("http://local.teste");
+  }
 
-	/**
-	 * @test
-	 */
-    public function title()
-    {
-        $this->open('http://local.teste/view/html/form.html');
-        $this->assertTitle('Acesso');
-    }
+  public function testMyTestCase()
+  {
+   	$this->url("/view/html/form.html");
+ 	$submit = $this->byCssSelector('.btn-default');
+    $submit->click();
+    $this->timeouts()->implicitWait(3000);
+	$mensagem = $this->byCssSelector(".mensagem");
+    return $this->assertEquals("Faltou informar o email", $mensagem->text());
+  }
 }
