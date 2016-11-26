@@ -1,9 +1,17 @@
 <?php
 
+namespace App;
+
 class Usuario
 {
-	protected $email;
-	protected $password;
+	public $id;
+	public $email;
+	public $password;
+	
+	public function setId($id)
+	{
+		$this->id = $id;
+	}
 	
 	public function setEmail($email)
 	{
@@ -23,5 +31,10 @@ class Usuario
 	public function getPassword()
 	{
 		return $this->password;
+	}
+	
+	public function toArray()
+	{
+		return get_object_vars($this);
 	}
 }

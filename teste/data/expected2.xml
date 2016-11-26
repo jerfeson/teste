@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<dataset>
+	<table name="usuario">
+		<column>id</column>
+        <column>email</column>
+        <column>password</column>
+		<row>
+			<value>1</value>
+			<value>01@gmail.com</value>
+			<value>0101</value>
+		</row>
+		<row>
+			<value>2</value>
+			<value>02@gmail.com</value>
+			<value>0202</value>
+		</row>
+		<row>
+			<value>3</value>
+			<value>03@gmail.com</value>
+			<value>0303</value>
+		</row>
+		<row>
+			<value>4</value>
+			<value>04@gmail.com</value>
+			<value>0404</value>
+		</row>
+	</table>
+</dataset>

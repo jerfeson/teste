@@ -11,7 +11,7 @@
  * 
  * @author Junior
  */
-class AcessoDriverTest extends PHPUnit_Extensions_Selenium2TestCase
+class OcorrenciaTest extends PHPUnit_Extensions_Selenium2TestCase
 {
   protected function setUp()
   {
