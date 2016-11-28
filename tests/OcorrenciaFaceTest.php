@@ -15,7 +15,7 @@ class OcorrenciaFaceTest extends PHPUnit_Framework_TestCase
 
 	public function setUp()
 	{
-		$this->url = 'http://local.sis21/cradf/site/';
+		$this->url = 'http://local.cra/crapr/site/';
 		$host = 'http://localhost:4444/wd/hub';
 		$driver = DesiredCapabilities::firefox();
 	    $this->webDriver = RemoteWebDriver::create($host, $driver);
@@ -41,7 +41,7 @@ class OcorrenciaFaceTest extends PHPUnit_Framework_TestCase
     		}
     	});
     		 
-		$this->webDriver->findElement(WebDriverBy::name('login'))->sendKeys('cradf');
+		$this->webDriver->findElement(WebDriverBy::name('login'))->sendKeys('crapr');
 		$this->webDriver->findElement(WebDriverBy::name('senha'))->sendKeys('p21&show');
 		$this->webDriver->findElement(WebDriverBy::name('confirmar'))->click();
     		
