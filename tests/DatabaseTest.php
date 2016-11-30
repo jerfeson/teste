@@ -18,7 +18,7 @@ abstract class DatabaseTest extends PHPUnit_Extensions_Database_TestCase
 	{
 		if (! $this->connection) {
 			$pdo = new \PDO(
-				'mysql:host=localhost;dbname=crapr',
+				'mysql:host=localhost;dbname=cradf',
 				'root', 'root', 
 				array(\PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"
 			));

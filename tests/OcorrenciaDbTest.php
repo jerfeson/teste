@@ -25,7 +25,7 @@ class OcorrenciaDbTest extends DatabaseTest
      */
     public function setUp()
     {
-        $this->url = 'http://local.cra/crapr/site/';
+        $this->url = 'http://local.sis21/cradf/site/';
         $host = 'http://localhost:4444/wd/hub';
         $driver = DesiredCapabilities::firefox();
         $this->webDriver = RemoteWebDriver::create($host, $driver);
@@ -74,7 +74,7 @@ class OcorrenciaDbTest extends DatabaseTest
             }
         });
 
-        $this->webDriver->findElement(WebDriverBy::name('login'))->sendKeys('crapr');
+        $this->webDriver->findElement(WebDriverBy::name('login'))->sendKeys('cradf');
         $this->webDriver->findElement(WebDriverBy::name('senha'))->sendKeys('p21&show');
         $this->webDriver->findElement(WebDriverBy::name('confirmar'))->click();
 
@@ -113,6 +113,9 @@ class OcorrenciaDbTest extends DatabaseTest
         $this->webDriver->findElement(WebDriverBy::cssSelector('input#cobrarCustas[value="1"]'))->click();
         $this->webDriver->findElement(WebDriverBy::name('labelCustas'))->sendKeys('Label Show face');
         $this->webDriver->findElement(WebDriverBy::name('confirmar'))->click();
+        
+        // testar mensagem de sucesso no grid
+        // testar banco de dados somente se for sucesso
 
         // verificação do banco de dados
         $queryTable = $this->getConnection()->createQueryTable(
