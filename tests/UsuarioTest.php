@@ -21,7 +21,7 @@ class UsuarioTest extends PHPUnit_Extensions_Database_TestCase
     {
         if (! $this->connection) {
             $pdo = new \PDO(
-                'mysql:host=localhost;dbname=crapr',
+                'mysql:host=localhost;dbname=cradf',
                 'root', 'root',
                 array(\PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"
                 ));
@@ -50,8 +50,9 @@ class UsuarioTest extends PHPUnit_Extensions_Database_TestCase
      * Teste para inserir e validar conteudo no banco de dados
      *
      * @return bool
+     * @test
      */
-	public function testInsert()
+	public function insert()
 	{
 		$usuario = new Usuario();
 		$usuario->setId(4);
@@ -69,4 +70,55 @@ class UsuarioTest extends PHPUnit_Extensions_Database_TestCase
 		
 		return $this->assertTablesEqual($expectedTable, $queryTable);
 	}
+	
+	/**
+	 * Teste para editar e validar conteudo no banco de dados
+	 *
+	 * @return bool
+	 * @test
+	 */	
+	public function update()
+	{
+	    $database = new Database($this->getConnection()->getConnection());
+	    $usuario = $database->getRows('usuario', array(
+            'where' => array(
+                'id' => 3
+            ),
+	        'return_type' => 'single'
+        ));
+	    
+	    $usuario['email'] = 'teste@show';
+	    $usuario['password'] = '@show';
+	    
+	    $database->update('usuario', $usuario, array('id' => 3));
+	    
+	    $queryTable = $this->getConnection()->createQueryTable(
+	        'usuario', 'SELECT * FROM usuario'
+        );
+	    
+	    $expectedTable = $this->createMySQLXMLDataSet("../../data/usuario_expected.xml")->getTable('usuario');
+	    
+	    
+	    return $this->assertTablesEqual($expectedTable, $queryTable);
+	}
+	
+	/**
+	 * @test
+	 */
+	public function delete()
+	{
+	    $database = new Database($this->getConnection()->getConnection());
+	    $database->delete('usuario', array(
+	        'id' => 3
+	    ));
+	    
+	    $expectedTable = $this->createMySQLXMLDataSet('../../data/usuario_delete_expected.xml')->getTable('usuario');
+	    
+	    $queryTable = $this->getConnection()->createQueryTable('usuario', 
+	       'SELECT * FROM usuario'
+	    );
+	    
+	    return $this->assertTablesEqual($expectedTable, $queryTable);
+	}
+	
 }

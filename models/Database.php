@@ -62,7 +62,7 @@ class Database
                     $data = $query->rowCount();
                     break;
                 case 'single':
-                    $data = $query->fetch(PDO::FETCH_ASSOC);
+                    $data = $query->fetch(\PDO::FETCH_ASSOC);
                     break;
                 default:
                     $data = '';

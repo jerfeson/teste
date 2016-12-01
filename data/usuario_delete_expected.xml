@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="cradf">
+	<table_data name="usuario">
+	<row>
+		<field name="id">1</field>
+		<field name="email">01@gmail.com</field>
+		<field name="password">0101</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="email">02@gmail.com</field>
+		<field name="password">0202</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

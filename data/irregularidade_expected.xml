@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="cradf">
+	<table_data name="codigoirregularidade">
+	<row>
+		<field name="id_codigoirregularidade">3</field>
+		<field name="codigo">01</field>
+		<field name="motivo">Data da apresentação inferior à data de vencimento</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">4</field>
+		<field name="codigo">20</field>
+		<field name="motivo">Data de emissão posterior ao vencimento</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">5</field>
+		<field name="codigo">02</field>
+		<field name="motivo">Falta de comprovante da prestação de serviço</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">6</field>
+		<field name="codigo">21</field>
+		<field name="motivo">Espécie inválida para protesto</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">7</field>
+		<field name="codigo">03</field>
+		<field name="motivo">Nome do sacado incompleto/incorreto</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">8</field>
+		<field name="codigo">22</field>
+		<field name="motivo">CEP do sacado incompatível com a praça de protesto</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">9</field>
+		<field name="codigo">04</field>
+		<field name="motivo">Nome do cedente incompleto/incorreto</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">10</field>
+		<field name="codigo">23</field>
+		<field name="motivo">Falta espécie do título</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">11</field>
+		<field name="codigo">05</field>
+		<field name="motivo">Nome do sacador incompleto/incorreto</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">12</field>
+		<field name="codigo">24</field>
+		<field name="motivo">Saldo maior que o valor do título</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">13</field>
+		<field name="codigo">06</field>
+		<field name="motivo">Endereço do sacado insuficiente</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">14</field>
+		<field name="codigo">25</field>
+		<field name="motivo">Tipo de endosso inválido</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">15</field>
+		<field name="codigo">07</field>
+		<field name="motivo">CNPJ/CPF do sacado inválido/incorreto</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">16</field>
+		<field name="codigo">26</field>
+		<field name="motivo">Devolvido por ordem judicial</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">17</field>
+		<field name="codigo">08</field>
+		<field name="motivo">CNPJ/CPF incompatível c/ o nome do sacado/sacador/avalista</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">18</field>
+		<field name="codigo">27</field>
+		<field name="motivo">Dados do título não conferem com disquete</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">19</field>
+		<field name="codigo">09</field>
+		<field name="motivo">CNPJ/CPF do sacado incompatível com o tipo de documento</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">20</field>
+		<field name="codigo">28</field>
+		<field name="motivo">Sacado e Sacador/Avalista são a mesma pessoa</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">21</field>
+		<field name="codigo">10</field>
+		<field name="motivo">CNPJ/CPF do sacador incompatível com a espécie</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">22</field>
+		<field name="codigo">29</field>
+		<field name="motivo">Corrigir a espécie do título</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">23</field>
+		<field name="codigo">11</field>
+		<field name="motivo">Título aceito sem a assinatura do sacado</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">24</field>
+		<field name="codigo">30</field>
+		<field name="motivo">TESTE SNOW</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">25</field>
+		<field name="codigo">12</field>
+		<field name="motivo">Título aceito rasurado ou rasgado</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">26</field>
+		<field name="codigo">31</field>
+		<field name="motivo">Data do vencimento rasurada</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">27</field>
+		<field name="codigo">13</field>
+		<field name="motivo">Título aceito – falta título (ag ced: enviar)</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">28</field>
+		<field name="codigo">32</field>
+		<field name="motivo">Vencimento – extenso não confere com número</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">29</field>
+		<field name="codigo">14</field>
+		<field name="motivo">CEP incorreto</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">30</field>
+		<field name="codigo">33</field>
+		<field name="motivo">Falta data de vencimento no título</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">31</field>
+		<field name="codigo">15</field>
+		<field name="motivo">Praça de pagamento incompatível com endereço</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">32</field>
+		<field name="codigo">34</field>
+		<field name="motivo">DM/DMI sem comprovante autenticado ou declaração</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">33</field>
+		<field name="codigo">16</field>
+		<field name="motivo">Falta número do título</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">34</field>
+		<field name="codigo">35</field>
+		<field name="motivo">Comprovante ilegível para conferência e microfilmagem</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">35</field>
+		<field name="codigo">17</field>
+		<field name="motivo">Título sem endosso do cedente ou irregular</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">36</field>
+		<field name="codigo">36</field>
+		<field name="motivo">Nome solicitado não confere com emitente ou sacado</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">37</field>
+		<field name="codigo">18</field>
+		<field name="motivo">Falta data de emissão do título</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">38</field>
+		<field name="codigo">37</field>
+		<field name="motivo">Confirmar se são 2 emitentes, se sim, indicar os dados dos 2</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">39</field>
+		<field name="codigo">19</field>
+		<field name="motivo">Título aceito: valor por extenso diferente do valor por numérico</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">40</field>
+		<field name="codigo">38</field>
+		<field name="motivo">Endereço do sacado igual ao do sacador ou do portador</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">41</field>
+		<field name="codigo">39</field>
+		<field name="motivo">Endereço do apresentante incompleto ou não informado</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">42</field>
+		<field name="codigo">58</field>
+		<field name="motivo">Ausência do Documento Físico</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">43</field>
+		<field name="codigo">40</field>
+		<field name="motivo">Rua / Número inexistente no endereço</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">44</field>
+		<field name="codigo">59</field>
+		<field name="motivo">Sacado Falecido</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">45</field>
+		<field name="codigo">41</field>
+		<field name="motivo">Informar a qualidade do endosso (M ou T)</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">46</field>
+		<field name="codigo">60</field>
+		<field name="motivo">Sacado Apresentou Quitação do Título</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">47</field>
+		<field name="codigo">42</field>
+		<field name="motivo">Falta endosso do favorecido para o apresentante</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">48</field>
+		<field name="codigo">61</field>
+		<field name="motivo">Título de outra jurisdição territorial</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">49</field>
+		<field name="codigo">43</field>
+		<field name="motivo">Data da emissão rasurada</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">50</field>
+		<field name="codigo">62</field>
+		<field name="motivo">Título com emissão anterior à concordata do sacado</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">51</field>
+		<field name="codigo">44</field>
+		<field name="motivo">Protesto de cheque proibido – motivo 20/25/28/30 ou 35</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">52</field>
+		<field name="codigo">63</field>
+		<field name="motivo">Sacado consta na lista de falência</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">53</field>
+		<field name="codigo">45</field>
+		<field name="motivo">Falta assinatura do emitente no cheque</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">54</field>
+		<field name="codigo">64</field>
+		<field name="motivo">Apresentante não aceita publicação de edital</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">55</field>
+		<field name="codigo">46</field>
+		<field name="motivo">Endereço do emitente no cheque igual ao do banco sacado</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">56</field>
+		<field name="codigo">65</field>
+		<field name="motivo">Dados do sacador em branco ou inválido</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">57</field>
+		<field name="codigo">47</field>
+		<field name="motivo">Falta o motivo da devolução no cheque ou motivo ilegível</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">58</field>
+		<field name="codigo">66</field>
+		<field name="motivo">Titulo sem autorização para protesto por edital</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">59</field>
+		<field name="codigo">48</field>
+		<field name="motivo">Falta assinatura do sacador no título</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">60</field>
+		<field name="codigo">67</field>
+		<field name="motivo">Valor divergente entre título e comprovante</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">61</field>
+		<field name="codigo">49</field>
+		<field name="motivo">Nome do apresentante não informado/incompleto/incorreto</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">62</field>
+		<field name="codigo">68</field>
+		<field name="motivo">Condomínio não pode ser protestado para fins falimentares</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">63</field>
+		<field name="codigo">50</field>
+		<field name="motivo">Erro de preenchimento do título</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">64</field>
+		<field name="codigo">69</field>
+		<field name="motivo">Vedada a intimação por edital para protesto falimentar</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">65</field>
+		<field name="codigo">51</field>
+		<field name="motivo">Título com direito de regresso vencido</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">66</field>
+		<field name="codigo">52</field>
+		<field name="motivo">Título apresentado em duplicidade</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">67</field>
+		<field name="codigo">53</field>
+		<field name="motivo">Título já protestado</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">68</field>
+		<field name="codigo">54</field>
+		<field name="motivo">Letra de Câmbio vencida – falta aceite do sacado</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">69</field>
+		<field name="codigo">55</field>
+		<field name="motivo">Título – falta tradução por tradutor público</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">70</field>
+		<field name="codigo">56</field>
+		<field name="motivo">Falta declaração de saldo assinada no título</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">71</field>
+		<field name="codigo">57</field>
+		<field name="motivo">Contrato de Câmbio – falta conta gráfica</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">72</field>
+		<field name="codigo">99</field>
+		<field name="motivo">Outros</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">73</field>
+		<field name="codigo">70</field>
+		<field name="motivo">Dados do Cedente em branco ou inválido</field>
+	</row>
+	<row>
+		<field name="id_codigoirregularidade">74</field>
+		<field name="codigo">98</field>
+		<field name="motivo">Retirada por falta de prazo para o repasse da guia de recolhimento</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>
